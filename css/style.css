@@ -1,0 +1,94 @@
+
+
+header {
+   background-color: #3b291f;
+   color: #ffffff;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: space-evenly;
+   align-items: flex-start;
+   align-content: space-between;
+   justify-content: space-between;
+   align-items: center;
+}
+.logo {
+   background-color: #3b291f;
+}
+
+h1 {
+font-family: 'Comfortaa', cursive;
+color:#608500;
+background-color: #ffffff;
+text-align: center;
+}
+
+
+ul {
+    color: #ffffff;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+footer {
+    background-color: #3b291f;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: stretch;
+	justify-content: space-around;
+	align-items: stretch;
+}
+
+.footer-elements {
+    color: #ffffff;
+    background-color: #3b291f;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+#liste-recettes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.recette {
+    width: 30%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recette img {
+    width: 100%; 
+    border-radius: 8px; 
+    
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    margin-right: 10px; 
+    text-decoration: none;
+    color: white;
+}
+
+
