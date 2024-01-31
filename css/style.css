@@ -1,94 +1,348 @@
 
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+img {
+    max-width:100%;
+}
 
 header {
-   background-color: #3b291f;
-   color: #ffffff;
-   display: flex;
    flex-direction: row;
-   flex-wrap: nowrap;
-   justify-content: space-evenly;
-   align-items: flex-start;
    align-content: space-between;
-   justify-content: space-between;
+   justify-content: space-evenly;
    align-items: center;
+
 }
-.logo {
-   background-color: #3b291f;
+
+
+.search-bar {
+    border: 1px solid #ffffff;
 }
+
+.search-bar-logo-container {
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: baseline;
+	align-content: stretch;
+}
+
+.contact-bar {
+    border: 1px solid #ffffff;
+}
+
 
 h1 {
-font-family: 'Comfortaa', cursive;
-color:#608500;
-background-color: #ffffff;
-text-align: center;
+    text-align: center;
 }
 
+h2 {
+    color: #608500;
+    font-family: 'Comfortaa', cursive;
+    margin-left: 8px;
+}  
 
-ul {
-    color: #ffffff;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
+.background-image {
+    background-image: url('../images/cooking.svg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px; 
+    flex-basis: 200px; 
+    min-width: 100%; 
+    max-width: 100%;
+    min-height: 100%;
+  }
 
-}
-
-
-footer {
-    background-color: #3b291f;
-	display: flex;
+.footer-container {
 	flex-direction: row;
-	flex-wrap: nowrap;
 	align-content: stretch;
 	justify-content: space-around;
 	align-items: stretch;
 }
 
+
 .footer-elements {
+    margin-top: -2%;
     color: #ffffff;
-    background-color: #3b291f;
     display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	justify-content: space-around;
 	align-items: stretch;
 	align-content: stretch;
 }
+.copyright {
+    text-align: center;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-end;
+	align-content: stretch;
+}
 
-#liste-recettes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
+.liste-recettes {
+    justify-content: space-evenly;
+    max-width: 1320px;
 }
 
 .recette {
-    width: 30%;
+    position: relative;
     margin-bottom: 20px;
     box-sizing: border-box;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    flex-shrink: 1;
+    flex-basis : 400px;
 }
+
+.recette p {
+    margin-left: 8px;
+}
+
 
 .recette img {
     width: 100%; 
-    border-radius: 8px; 
-    
+    border-radius: 8px;    
 }
 
+.more-details {
+    color: #608500;
+    text-decoration: underline;
+    display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+	align-content: stretch;
+    margin-right: 8px;
+}
 
 nav {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
 nav a {
-    margin-right: 10px; 
+    margin-right: 8px; 
     text-decoration: none;
     color: white;
 }
 
+.label {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color:#608500;
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+ul {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-items: stretch;
+	flex-direction: column;
+	align-items: baseline;
+	align-content: stretch;
+}
+
+ul a {
+    color: white;
+    padding :12px;
+}
+
+li {
+    padding :4px;
+}
+
+.footer-nav-a {
+    margin-right: 8px; 
+    color: white;
+}
+
+input {
+    margin: 0;
+}
+
+.difficult strong {
+    text-decoration: underline;
+    font-family: 'Comfortaa', cursive;
+}
+
+.form {
+    margin-right: 60px;
+    font-size: 28px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+}
+.form input {
+
+    border-radius: 8px;
+    width: 300px; 
+    height: 30px; 
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; 
+}
+.container-main-form {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: stretch;
+	align-content: stretch;
+    justify-content: space-evenly;
+    max-width: 1320px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.form-elements {
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: stretch;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    flex-shrink: 1;
+    flex-basis : 400px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+	align-content: center;
+    flex-basis: 400px; 
+
+}@media screen and (max-width: 400px) {
+    .container-main-form {
+        flex-direction: column;
+    }
+}
+
+.background-image-form {
+    background-image: url('../images/formulaire.png'); 
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+
+.p-05 {
+    padding: 4px;
+}
+
+.p-1 {
+    padding: 8px;
+}
+
+.p-2 {
+    padding: 12px;
+}
+
+.p-3 {
+    padding: 16px;
+}
+
+.p-4 {
+    padding: 20px;
+}
+
+.p-5 {
+    padding: 32px;
+}
+
+.m-0 {
+    margin: O;
+}
+.m-a {
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.b-radius05 {
+    border-radius: 4px;
+}
+.b-radius1 {
+    border-radius: 8px;
+}
+
+.b-radius2 {
+    border-radius: 20px;
+}
+
+.border-b {
+    box-sizing: border-box;
+}
+
+.generic-color {
+    background-color: #ffffff;
+}
+
+.b-color1 {
+    background-color: rgb(91, 47, 22);
+}
+
+.b-color2 {
+    background-color: #608500;
+}
+
+.f-family1 {
+    font-family: 'Comfortaa', cursive;
+}
+
+.u {
+    text-decoration: underline;
+}
+
+.f-wcolor {
+    color: white;
+}
+.f-gcolor {
+    color: #608500;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+.m-right05 {
+    margin-right: 4px;
+}
+.m-right1 {
+    margin-right: 8px;
+}
+
+.m-left1 {
+    margin-left: 8px;
+}
+
+.f-shrink {
+    flex-shrink: 1;
+}
+
+.f-grow {
+    flex-grow: 1;
+}
+
+.b-shadow {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.register-button {
+    background-color: #608500;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
 
